@@ -33,11 +33,11 @@ place all k left and all k right parentheses
 if condition for the open parentheses
 if condition for the closing parentheses
 
-//r
-
-//e
-
-// p
+1)
+2)
+3)
+4)
+5)
 
 function parens(left,right,str,result) {
     if(left===0 && right===0) {
