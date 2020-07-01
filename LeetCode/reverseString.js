@@ -4,6 +4,13 @@ Do not allocate extra space for another array, you must do this by modifying the
 
 You may assume all the characters consist of printable ascii characters.
 
+1) Have a variable 
+2) 
+3)
+4)
+5)
+
+
 let reverseString = function(s) {
     let start = 0;
     let end = s.length - 1;
