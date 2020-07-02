@@ -13,6 +13,11 @@ Example 2:
 Input: ["cool","lock","cook"]
 Output: ["c","o"]
 
+1)
+2)
+3)
+4)
+5)
 
 Note:
 
