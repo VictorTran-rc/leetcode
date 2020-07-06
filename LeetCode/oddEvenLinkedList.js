@@ -18,23 +18,33 @@ The relative order inside both the even and odd groups should remain as it was i
 The first node is considered odd, the second node even and so on ...
 The length of the linked list is between [0, 10^4].
 
+1) Be able to seperate the even and odd numbers to their own list
+2) Link the odd list to the even list
+3) have two variables one for oddHead second for evenHead linkList
+4) Have two more pointer (odd, even) variables so you can move throughout the list so you can link them together
+5) I want to reassign the pointers throughout the loop odd numbers loop together and even numbers loop together
+6) Make sure the function is a linked list. Set the parameter equal to null
+7) If return null then its not a linked list
+8) Set variables to seperate the odd and even numbers
 
 var oddEvenList = function(head) {
     if (head === null) {
         return null;
+    } // return null then there is no linked list
+
+  // variables that allow you to form the even and odd linked list
+    let odd = head; // starting the list for odd
+    let even = head.next; // Move to the next number after even
+    let evenHead = even; // starting point for the even numbers
+
+
+    while (even !== null && even.next !== null) { // stops the loop when a number equals to null
+        odd.next = even.next; // moving to the next odd number
+        odd = odd.next; // moving the odd pointer to the next odd number
+        even.next = odd.next; // moving to the next even number
+        even = even.next; // moving the even pointer to the next even number
     }
 
-    let odd = head;
-    let even = head.next;
-    let evenHead = even;
-
-    while (even !== null && even.next !== null) {
-        odd.next = even.next
-        odd = odd.next;
-        even.next = odd.next;
-        even = even.next
-    }
-
-    odd.next = evenHead;
+    odd.next = evenHead; // Connecting the odd link list to the even link list
     return head;
 };
