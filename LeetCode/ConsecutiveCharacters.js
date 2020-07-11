@@ -35,6 +35,12 @@ Constraints:
   1 <= s.length <= 500
 s contains only lowercase English letters.
 
+1)
+2)
+3)
+4)
+5)
+
 var maxPower = function(s) {
   let maxConsectiveLetters = 1;
   let consectiveLetters = 1;
