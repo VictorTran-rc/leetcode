@@ -7,7 +7,11 @@ Output:
   [1,2,1],
   [2,1,1]
 ]
-
+1)
+2)
+3)
+4)
+5)
 var permuteUnique = function(nums){
   nums.sort(function(a,b){return a-b});
   var used ={}, n=nums.length, res=[];
