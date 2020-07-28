@@ -14,7 +14,11 @@ The shortest length is 2. So return 2.
 Example 2:
 Input: [1,2,2,3,1,4,2]
 Output: 6
-
+1)
+2)
+3)
+4)
+5)
 const findShortestSubArray = (nums) => {
     const counts = {}
     const firstIndexes = {}
