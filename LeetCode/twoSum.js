@@ -17,7 +17,7 @@ return [0, 1].
 // 6) check if the number sorted in the array is in the map 
 // 7) have the complement number in the array be the index 
 
-
+Hash map methond
 var twoSum = function(nums, target) {
    const addition = {};
     for(let i=0; i<nums.length; i++){
@@ -27,3 +27,18 @@ var twoSum = function(nums, target) {
     addition[target-nums[i]]= i
     }
 };
+
+
+let twoSum = function(nums, target){
+  const previousValues = {}
+  for(let i =0; i < nums.length; i++){
+    const currentNumber = nums[i];
+    const neededValue = target - currentNumber
+    const index2 = previousValues[neededValue]
+  if(index2 != null){
+    return [index2, i]
+  }else{
+    previousValues[currentNumber] = i
+  }
+ } 
+}
