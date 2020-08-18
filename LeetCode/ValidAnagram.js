@@ -20,3 +20,13 @@ const isAnagram = function(s, t) {
     return false;
   }
 };
+
+const isAnagram = function(s, t) {
+    return cleanString(s) === cleanString(t)
+}
+
+
+function cleanString(str){
+  return str.replace(/[\^w]/g, "").toLowerCase().split('').sort().join('')
+ 
+}
